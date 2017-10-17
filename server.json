@@ -2,7 +2,7 @@
   "localinterface": "eth0",
   "localport": 9089,
   "remoteaddr": "127.0.0.1",
-  "remoteport": 443,
+  "remoteport": 8080,
   "key": "14789632a",
   "crypt": "none",
   "mode": "fast3",

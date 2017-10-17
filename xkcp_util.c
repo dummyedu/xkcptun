@@ -86,6 +86,7 @@ char *get_iface_ip(const char *ifname)
 	char *ip_str;
 	int sockd;
 	u_int32_t ip;
+	return "0.0.0.0";
 
 	/* Create a socket */
 	if ((sockd = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
