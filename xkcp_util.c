@@ -165,6 +165,7 @@ void xkcp_set_config_param(ikcpcb *kcp)
 {
 	struct xkcp_param *param = xkcp_get_param();
 	kcp->output	= xkcp_output;
+	ikcp_setmtu(kcp, param->mtu);
 	ikcp_wndsize(kcp, param->sndwnd, param->rcvwnd);
 	ikcp_nodelay(kcp, param->nodelay, param->interval, param->resend, param->nc);
 	debug(LOG_DEBUG, "sndwnd [%d] rcvwnd [%d] nodelay [%d] interval [%d] resend [%d] nc [%d]",
